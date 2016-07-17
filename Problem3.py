@@ -15,8 +15,11 @@ def readQuotes():
         quotes.append(q)
     return quotes
 
+# DG 7/17 - imported String module and used it to remove all special characters from words
+import string
+
 def makeWords(quote):
-    words = quote.lower().split()
+    words = quote.lower().translate(string.maketrans("",""), string.punctuation).split()
     return words
 
 def makePostingsDic(quotes):
