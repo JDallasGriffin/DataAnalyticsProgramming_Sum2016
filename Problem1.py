@@ -83,7 +83,7 @@ def compare(human,computer):
             return 2
 
 
-# def lets_play():
+def lets_play():
     past_human_choices =[]
     games_played = 0
     human_wins = 0
